@@ -1,0 +1,35 @@
+def RootsCount(a, b, c):
+    d = b * b - 4 * a * c
+    if d < 0:
+        d = 0
+    if d == 0:
+        d = 1
+    if d > 0:
+        d = 2
+    return d
+for i in range(0, 3):
+    print('Введите  A: ')
+    a = float(input())
+    print('Введите  B: ')
+    b = float(input())
+    print('Введите  C: ')
+    c = float(input())
+    print(RootsCount(a, b, c))
+    
+    
+    
+    def RootCount(A, B, C):
+    if A==0:
+        return "Коэффициент А равен нулю"
+    D=B**2-4*A*C
+    if D<0:
+        print('Нет корней')
+    elif D==0:
+        return 1 
+    else:
+        return 2
+
+A=float(input())
+B=float(input())
+C=float(input())
+print(RootCount(A, B, C))
