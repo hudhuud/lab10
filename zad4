@@ -1,0 +1,22 @@
+def Even(k):
+    return k%2==0
+for i in range(10):
+    s=Even(int(input()))
+    if s == True:
+        l+=1
+print(l)
+
+
+
+def Even(K):
+    if K%2==0:
+        return True
+    else:
+        return False
+
+lst=list(int(input()) for i in range(10))
+s=0
+for i in lst:
+    if Even(i)==True:
+       s+=1 
+print(f'{s} четных чисел')
