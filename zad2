@@ -1,3 +1,7 @@
+#Задание 2. Func2. Описать функцию RootCount(A, B, C) целого типа, определяющую количество корней квадратного уравнения A* x ** 2 + B * x + C = 0 (A, B, C — вещественные параметры, A != 0). С ее помощью найти количество корней для каждого из трех квадратных уравнений с данными коэффициентами. Количество корней определять по значению дискриминанта: D = B ** 2 - 4 * A * C.
+#Шарапова Ангира 21 ис 21
+
+
 def RootsCount(a, b, c):
     d = b * b - 4 * a * c
     if d < 0:
@@ -32,4 +36,21 @@ for i in range(0, 3):
 A=float(input())
 B=float(input())
 C=float(input())
+print(RootCount(A, B, C))
+
+
+def RootCount(A, B, C):
+    if A==0:
+        return "A=0"
+    D=B**2-4*A*C
+    if D<0:
+        print('d<0. корней нет')
+    elif D==0:
+        return 1 
+    else:
+        return 2
+for i in range(0,3):
+    A=float(input())
+    B=float(input())
+    C=float(input())
 print(RootCount(A, B, C))
