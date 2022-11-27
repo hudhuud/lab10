@@ -1,0 +1,28 @@
+
+def SumRange(A, B):
+    s=0
+    if A>B:
+       return 0
+    for i in range(A, B+1):
+       s+=i
+    return s
+
+A=int(input())
+B=int(input())
+C=int(input())
+print(SumRange(A, B))
+print(SumRange(B, C))
+
+
+def SumRange(a, b):
+    n = 1
+    for i in range(a, b):
+        n += 1
+    if a > b:
+        return 0
+    else:
+        return n
+a = int(input())
+b = int(input())
+c = int(input())
+print(SumRange(a, b), SumRange(b, c), sep='\n')
