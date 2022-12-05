@@ -1,14 +1,5 @@
-def DigitCount(K):
-    if K<0:
-        return "Число К отрицательное"
-    s=1
-    while K//10!=0:
-        s+=1
-        K=K//10
-    return s
-
-print(DigitCount(1234))
-
+#Задание 5. Func14. Описать функцию DigitCount(K) целого типа, находящую количество цифр целого положительного числа K. Используя эту функцию, найти количество цифр для каждого из пяти данных целых положительных чисел. 
+#Шарапова Ангира 21 ис 21
 
 def DigitCount(k):
     i=0
@@ -16,9 +7,6 @@ def DigitCount(k):
         k //= 10
         i+=1
     return i
-a = int(input())
-b = int(input())
-c = int(input())
-d = int(input())
-e = int(input())
+a, b, c, d, e = int(input()), int(input()), int(input()), int(input()), int(input())
 print(DigitCount(a),DigitCount(b),DigitCount(c),DigitCount(d),DigitCount(e), sep=', ')
+
