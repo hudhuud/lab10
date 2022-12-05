@@ -1,22 +1,13 @@
+#Задание 4. Func9. Описать функцию Even(K) логического типа, возвращающую True, если целый параметр K является четным, и False в противном случае. С ее помощью найти количество четных чисел в наборе из 10 целых чисел. 
+#Шарапова Ангира 21 ис 21
+
 def Even(k):
-    return k%2==0
+    return k % 2 == 0
+ch = 0
 for i in range(10):
-    s=Even(int(input()))
-    if s == True:
-        l+=1
-print(l)
+    s = Even(int(input()))
+    if s:
+        ch += 1
+print(ch)
 
 
-
-def Even(K):
-    if K%2==0:
-        return True
-    else:
-        return False
-
-lst=list(int(input()) for i in range(10))
-s=0
-for i in lst:
-    if Even(i)==True:
-       s+=1 
-print(f'{s} четных чисел')
