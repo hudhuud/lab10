@@ -1,27 +1,13 @@
-
-def SumRange(A, B):
-    s=0
-    if A>B:
-       return 0
-    for i in range(A, B+1):
-       s+=i
-    return s
-
-A=int(input())
-B=int(input())
-C=int(input())
-print(SumRange(A, B))
-print(SumRange(B, C))
-
+#Задание 3. Func6. Описать функцию SumRange(A, B) целого типа, находящую сумму всех целых чисел от A до B включительно (A и B — целые). Если A > B, то функция возвращает 0. С помощью этой функции найти суммы чисел от A до B и от B до C, если даны числа A, B, C.
+#Шарапова Ангира 21 ис 21
 
 def SumRange(a, b):
-    n = 1
-    for i in range(a, b):
-        n += 1
-    if a > b:
-        return 0
-    else:
-        return n
+    s=0
+    if a>b:
+       return 0
+    for i in range(a, b+1):
+       s+=i
+    return s
 a = int(input())
 b = int(input())
 c = int(input())
